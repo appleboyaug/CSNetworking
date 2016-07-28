@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15B42" minimumToolsVersion="Xcode 7.0">
+    <entity name="CSNews" syncable="YES">
+        <attribute name="cid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createtime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="nid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="read" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <entity name="CSNewsDetail" syncable="YES">
+        <attribute name="detailinfo" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="nid" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CSNews" syncable="YES"/>
+    </entity>
+    <entity name="CSUser" syncable="YES">
+        <attribute name="credential" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mobile" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nickname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="partnerInfoMap" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="portrait" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userid" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CSNews" positionX="-477" positionY="6" width="128" height="105"/>
+        <element name="CSNewsDetail" positionX="9" positionY="108" width="128" height="75"/>
+        <element name="CSUser" positionX="-254" positionY="-106" width="128" height="133"/>
+    </elements>
+</model>
